@@ -1,0 +1,12 @@
+{{> header}}
+{{> menu}}
+
+<h1>Clients</h1>
+
+<ul>
+  {{#each customers}}
+    <li>{{first_name}} {{last_name}} - {{email}}</li>
+  {{/each}}
+</ul>
+
+{{> footer}}
