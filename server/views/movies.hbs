@@ -3,10 +3,24 @@
 
 <h1>Pel·lícules</h1>
 
-<ul>
+<div class="page-container">
   {{#each movies}}
-    <li>{{title}} - {{release_year}}</li>
+    <div class="card">
+
+      <h2>{{title}}</h2>
+      <p class="year">Any: {{release_year}}</p>
+
+      <h3>Actors</h3>
+      <ul>
+        {{#each actors}}
+          <li>
+            <span>{{first_name}} {{last_name}}</span>
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>
   {{/each}}
-</ul>
+</div>
 
 {{> footer}}

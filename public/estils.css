@@ -75,3 +75,53 @@ footer {
   margin-top: 50px;
   font-size: 0.9rem;
 }
+/* Contenedor general para todas las páginas */
+.page-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Tarjetas reutilizables */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Títulos dentro de tarjetas */
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+/* Listas internas */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card li {
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}

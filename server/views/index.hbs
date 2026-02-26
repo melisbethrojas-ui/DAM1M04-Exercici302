@@ -3,18 +3,22 @@
 
 <h1>Pàgina principal</h1>
 
-<h2>Movies</h2>
-<ul>
-  {{#each movies}}
-    <li>{{title}} ({{release_year}})</li>
-  {{/each}}
-</ul>
+<div class="page-container">
 
-<h2>Categories</h2>
-<ul>
-  {{#each categories}}
-    <li>{{name}}</li>
+  <h2>Pel·lícules destacades</h2>
+  {{#each movies}}
+    <div class="card">
+      <h3>{{title}} ({{release_year}})</h3>
+    </div>
   {{/each}}
-</ul>
+
+  <h2>Categories</h2>
+  {{#each categories}}
+    <div class="card">
+      <h3>{{name}}</h3>
+    </div>
+  {{/each}}
+
+</div>
 
 {{> footer}}
